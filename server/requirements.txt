@@ -1,0 +1,5 @@
+# Install in Week 3 when adding the API.
+fastapi
+uvicorn
+httpx
+pytest
