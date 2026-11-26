@@ -32,7 +32,7 @@ Target 3–4 weeks at 60–90 minutes per day, five days per week. Each session 
 
 ## Scope
 
-Analyze public GitHub repositories. Display languages, likely frameworks, dependencies, environment variable names, and generated setup instructions. Keep the tool non-AI. Add new capabilities only when they support this flow.
+Analyze public GitHub repositories using the GitHub API to read repository files. Display languages, likely frameworks, dependencies, environment variable names, and generated setup instructions. Keep the tool non-AI. Add new capabilities only when they support this flow.
 
 ## Progress
 

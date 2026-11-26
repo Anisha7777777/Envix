@@ -14,6 +14,6 @@ Python analysis uses `server/`. Week 1 starts with standard-library functions. A
 
 ## First learning task
 
-In `server/envix/repository.py`, implement `parse_github_repo_url(url: str) -> tuple[str, str]`. It should return the owner and repository name from a public GitHub repository URL. Try a normal URL, a trailing slash, a `.git` suffix, and a non-GitHub URL. Reject invalid URLs with `ValueError`.
+In `server/envix/repository.py`, implement `parse_github_repo_url(url: str) -> tuple[str, str]`. Return the owner and repository name from an HTTPS GitHub repository URL. Support a trailing slash and a `.git` suffix. Raise `ValueError` for a different host, a missing owner or repository, or additional path segments.
 
 See `docs/PLAN.md` for the learning schedule and `docs/CONTRIBUTIONS.md` for the work log.
