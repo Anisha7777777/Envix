@@ -7,3 +7,4 @@
 - 2026-11-27, project owner clarification: use public GitHub repositories for the hosted MVP. AI-assisted: aligned the README and plan with public URL input and GitHub API file access.
 - 2026-11-27, project owner implementation with AI hints and review: added `read_requirements`, including whitespace cleanup, blank-line and comment filtering, dependency collection, and missing-file handling. The project owner confirmed successful sample-file and missing-file runs in VS Code.
 - Session workflow: update this log, review completed changes, and commit and push session work to GitHub on the same day.
+- 2026-11-27, project owner implementation with AI hints and review: added read_package_json using UTF-8 file reading and json.loads. Verified dependency iteration and a missing dependencies section in a practice script. AI-assisted integration cleanup removed practice calls and renamed local variables. Missing files and malformed JSON still raise exceptions in this reader.

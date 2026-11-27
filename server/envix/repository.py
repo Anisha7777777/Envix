@@ -1,3 +1,4 @@
+import json
 from pathlib import Path
 
 def read_requirements(file_path: str) -> list[str]:
@@ -11,6 +12,10 @@ def read_requirements(file_path: str) -> list[str]:
     except FileNotFoundError:
         print(f"Error reading requirements file: {file_path}")
         return []
-dependencies = read_requirements("missing_requirements.txt")
-print(dependencies)
-print("Total dependencies:", len(dependencies))
+
+
+
+def read_package_json(file_path: str) -> dict:
+    text = Path(file_path).read_text(encoding="utf-8")
+    data = json.loads(text)
+    return data
